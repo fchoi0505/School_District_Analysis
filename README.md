@@ -1,16 +1,16 @@
 # School District Analysis
 
-## Overview of Project:
+## Overview of Project
 
 Using python code and pandas to perform an analysis of a school district with district, school, and class subject summary tables generated.
 
-### Purpose:
+### Purpose
 
 Python code and pandas are used to perform an analysis of a school district's data set.  This allows for quick processing and analysis of a large data set to develop summary tables that communicate findings to further analysis and deductions about the data.  Summary tables for the district, the schools in the district, and additional details for the schools were developed.  
 
 While processing the data set, there was evidence that the ninth grader math and reading scores from Thomas High School appeared to be altered.  To not influence the analysis summaries, these scores were removed and Thomas High School percentages were replaced to only reflect the school's tenth through twelfth graders' scores.  
 
-## Analysis Results and Challenges:
+## Analysis Results and Challenges
 
 ### Analysis of Outcomes 
 
