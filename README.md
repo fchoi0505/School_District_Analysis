@@ -14,19 +14,19 @@ While processing the data set, there was evidence that the ninth grader math and
 
 ### Analysis of Outcomes 
 
-The district summary for the math, reading, and overall passing percentages were minorly affected by removing the Thomas High School's ninth grader math and reading scores.  After score removal, the district summary math and reading percentages rose by approximately 0.1% while the overall passing percentage rose by approximately 0.2%.  Since it was only one grade level from one school that was removed from the data set, the overall district summary was not significantly impacted but more focused school summary tables created from the dataset reflect the dataset modifications more clearly.
+#### District Summary
+The district summary for the math, reading, and overall passing percentages were minorly affected by removing the Thomas High School's ninth grader math and reading scores.  After score removal, the district summary math and reading percentages lowered by approximately 0.1% while the overall passing percentage rose by approximately 0.2%.  Since it was only one grade level from one school that was removed from the data set, the overall district summary was not significantly impacted but more focused school summary tables created from the dataset reflect the dataset modifications.
 
-#### Updated District Summary
+##### Updated District Summary
 ![](images/district_summary.png)
 
-The school summary row for Thomas High School was updated to reflect higher math, reading, and overall passing percentages when the ninth grader scores were removed.  The math passing percentage rose from 66.9% to 93.2%; the reading passing percentage rose from 69.7% to 97.0%; and the overall passing percentage rose from 65.1% to 90.1%
+#### School Summary
 
-#### Updated School Summary
+The school summary row for Thomas High School was updated to reflect lower math, reading, and overall passing percentages when the ninth grader scores were removed.  When the ninth grade scores were removed, the passing percentages for math, reading, and overall need to be re-calculated to include only tenth through twelfth graders in the student count.  Before the student count for the percentage calculations was modified, significantly lower passing percentages could be seen.  Once the Thomas High School student count was modified to only reflect the tenth through twelfth graders since the ninth grader scores were removed, the school passing percentages were minorly lowered from when the ninth graders scores and counts were previously included. 
+
+##### Updated School Summary
 ![](images/school_summary.png)
 
-By removing the ninth grader's math and reading scores and updating the student count for passing percentage calculations to only include tenth through twefth graders, the overall passing percentage for Thomas High School rose.  Because the ninth graders' math and reading passing percentages were low, their scores were dropping the school's passing percentages when they were included in the total school's statistics.
-
-When Thomas High School's math, reading, and overall percentages were re-calculated after removing the ninth graders' scores, Thomas High School became a Top 5 school in the district.
 
 ### Additional Results with Dataset Modification
 
@@ -38,13 +38,13 @@ When the ninth-grade scores were removed, the following affects are observed:
 
 -- Scores by school size:  as with school spending, the Thomas High School ninth graders need to remain in the total school count to account for their attendance at the school. Removing the ninth graders' with the student count is relevant for their infuence on the passing percentages for math and reading but not relevant for comparing the categories of school sizes within the district.
 
--- Scores by school type:  the ninth graders' scores and impact on school passing percentages are irrelevant to the categorization of Thomas High School's school type as their scores would not change that Thomas High School is a Charter school.  But, if the school type was a filtering/correlation parameter, then the updated passing percentages (math, reading, overall) would affect how Thomas High School compares to other schools within the Charter school type categorization and how it impacts Charter schools compared to District schools.
+-- Scores by school type:  the ninth graders' scores and impact on school passing percentages are irrelevant to the categorization of Thomas High School's school type as their scores would not change that Thomas High School is a Charter school.  And based on the precision used for these scores, no impact is visible following Thomas High School score modification.  
 
 ### Challenges and Difficulties Encountered
 
 No challenges were encountered during the analysis. But assumptions or additional actions that needed to be made include:
 
-*By removing the Thomas High School ninth graders' scores, the passing percentages (math, reading, and overall) were re-calculated to only include and reflect the passing percentages for the tenth through twelfth graders at the school (e.g. Thomas High School student count used to calculate a passing percentage only includes tenth through twelfth graders).  As a result of this modification for Thomas High School, all passing percentages were impacted.  If looking at the total district or a larger set of schools, the performance analysis impact is minor and negligible in certain groupings because only one school was modified.  But if looking at a smaller set or comparing specific schools with Thomas High School, the modification impact is more visible with regards to performance.  When analyzing non-performance related data points (e.g. data not related to subject scores or passing percentages), the modification made for Thomas High School ninth grade scores is not taken into consideration and true school student totals are used.
+*By removing the Thomas High School ninth graders' scores, the passing percentages (math, reading, and overall) were re-calculated to only include and reflect the passing percentages for the tenth through twelfth graders at the school (e.g. Thomas High School student count used to calculate a passing percentage only includes tenth through twelfth graders).  As a result of this modification for Thomas High School, all passing percentages were impacted.  But because the ninth graders' impact to Thomas High School overall percentages was minor, the summary dataframe values' precision (e.g. increasing or decreasing it) can reflect the modification impact.  Higher precision shows the modification impact while lower precision for those summary percentages values does not reflect the modifications made.
 
 *No other evidence of academic dishonesty was found in other schools.
 
@@ -57,11 +57,10 @@ No challenges were encountered during the analysis. But assumptions or additiona
 
 In summary of this school district analysis, the following four major changes were found after reading and math scores for ninth graders at Thomas High School were replaced with NaNs:
 
-1.  Thomas High School changed to be a top 5 performing school in the district based on their updated overall passing percentage.
+1.  Thomas High School remained a top 5 performing school in the district based on their updated overall passing percentage.  To keep this result the total student count for the passing percentage calculations needed to be updated to reflect only the tenth through twelth graders and eliminating ninth graders scores and student count for the math, reading, and overall performance calculations.
 
-2.  Thomas High School's updated math and reading passing percentages were closer to other Charter school passing percentages in the District than prior to the ninth grade score changes.  Prior to the change, Thomas High school passing percentages where approximately 25-30% lower than other Charter schools
+2.  Prior to updating the passing percentages to only reflect tenth through twelfth graders' in the student count, Thomas High School's passing percentages where approximately 25-30% lower than the original school passing percentages (that included ninth graders' scores) since the ninth graders scores were removed.
 
-3.  Thomas High School's updated overall passing percentage was closer to other Charter schools' overall passing percentages in the District than prior to the ninth grade score changes.  Prior to the change, Thomas High School's overall passing percentage was approximately 25% lower, excluding it from being a top 5 performing school.
+3.  Once the ninth graders scores were removed and the passing percentages updated for Thomas High School, the overall impact for Thomas High School was a very small lowering in their passing percentages from original calculations that included ninth graders.  Once additional investigation is made into the Thomas High School ninth graders' scores, there is potential for greater impact if the ninth grader scores are determined to be higher or lower than originally recorded.  
 
-4.  If Thomas High School's ninth grade scores were not removed, the School Types category comparison would have been affected as the Charter school type passing percentages would have been lower.  In particular, the reading passing percentage comparison between Charter and District schools is closer than in math and overall percentages.  If the reading passing percentage between Charter and District schools was only marginally different, it would obscure any differences actually executed between Charter and District schools or would not trigger further thought/analysis to even be made that could make a difference.
- 
+4.  By removing the ninth graders scores, a per school ninth grader comparison cannot be made for the schools in the district.  But when factored into summary dataframes at the district or school type level (broader scope), lower value precision does not make the Thomas High School modification visible.
